@@ -15,8 +15,11 @@ public class CustomExpressionTree {
  * can be converted into an expression.
  *
  * */
-    public static CustomNode converterPostfixStringIntoExpression(String userInputPostfixNotation) {
+    public static CustomNode
+    converterPostfixStringIntoExpression (String userInputPostfixNotation )
+    throws Exception {
 
+        boolean isThereAnOperatorNodeInExpression = false;
         // base case
         if ( isInputInvalid(userInputPostfixNotation) ) {
             wrongOperatorInput();
@@ -40,6 +43,7 @@ public class CustomExpressionTree {
 
                 if( isOperator( operatorInput )){
                     createOperatorNode( nodeStack, operatorInput );
+                    isThereAnOperatorNodeInExpression = true;
                 } else {
 //                    wrong input
                     wrongOperatorInput();
@@ -47,6 +51,11 @@ public class CustomExpressionTree {
             }
         }
 
+        if(!isThereAnOperatorNodeInExpression) {
+            System.out.println( "\nERROR MESSAGE: \nThe input must have operators ( -, +, /, *, ^, % ) inside .\n" +
+                    "Enter proper post fix notation nextime.\n" );
+            wrongOperatorInput();
+        }
         // a pointer to the root of the expression tree remains on the stack
         return nodeStack.peek();
     }
@@ -72,8 +81,11 @@ public class CustomExpressionTree {
         nodeStack.push(operatorNode);
     }
 
-    private static void wrongOperatorInput() {
+//    the exception thrown by this method will be caught by the main program runner to indicate wrong input.
+    private static void wrongOperatorInput() throws Exception{
 
+        System.out.println( "WRONG INPUT: Please try to format input with proper post fix notation.");
+        throw new Exception();
     }
     /**
      *

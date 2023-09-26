@@ -1,35 +1,60 @@
 package LimModifiedExpressionTree;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ProgramTest {
     public static void main(String[] args) {
         programStart();
     }
-
+    private static Scanner taker = new Scanner(System.in);
 
     public static void programStart() {
 
         System.out.println(
             "Input will be converted into Infix and postfix notation after input.\n" +
             "Improper input will result into error and will not show conversion\n" +
-            "Use comma to separate the characters.\n\n" +
+            "Use spaces to separate the characters.\n\n" +
             "ENTER NUMBERS AND OPERATORS IN POSTFIX NOTATION : "
         );
 
-        Scanner taker = new Scanner(System.in);
+
         String userInput = taker.nextLine();
 
-        CustomNode headNode = CustomExpressionTree.converterPostfixStringIntoExpression( userInput );
+        try {
 
-        System.out.print("\n\nPostfix Expression" +
-                ": ");
+            CustomNode headNode = CustomExpressionTree.converterPostfixStringIntoExpression(userInput);
 
-        CustomExpressionTree ExpressionTree = new CustomExpressionTree();
-        ExpressionTree.postorder(headNode);
+            System.out.print("\n\nPostfix Expression" +
+                    ": ");
 
-        System.out.print("\nInfix Expression: ");
-        ExpressionTree.inorder(headNode);
+            CustomExpressionTree ExpressionTree = new CustomExpressionTree();
+            ExpressionTree.postorder(headNode);
+
+            System.out.print("\nInfix Expression: ");
+            ExpressionTree.inorder(headNode);
+        }
+        catch (Exception e ) {
+
+//            error occurred because of user input or other issues
+//            response already handled in CustomExpressionTree.java
+        }
+        askUserToContinueProgramOrNot();
     }
+
+    public static void askUserToContinueProgramOrNot( ){
+
+        System.out.println(
+            "\n\nInput 'y' or 'Y' to Continue program.\n" +
+            "Input any key to end program \n" +
+            "Do you want to run program again ?\n"
+        );
+        String input = taker.nextLine();
+
+        if( input.toLowerCase().charAt(0) == 'y' ){
+            programStart();
+        }
+        taker.close();
+//        end program if user entered other keys.
+    }
+
 }
