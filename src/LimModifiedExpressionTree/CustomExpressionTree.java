@@ -54,7 +54,8 @@ public class CustomExpressionTree {
         Stack<CustomNode> s = new Stack<>();
 
         // traverse the postfix expression
-        for (char c: postfix.toCharArray())
+        char[] allCharacters = postfix.toCharArray();
+        for (char c: allCharacters)
         {
             // if the current token is an operator
             if (isOperator(c))
@@ -66,14 +67,15 @@ public class CustomExpressionTree {
                 // construct a new binary tree whose root is the operator and whose
                 // left and right children point to `y` and `x`, respectively
                 CustomNode node = new CustomNode(c, y, x);
-
                 // push the current node into the stack
                 s.add(node);
             }
+
             // if the current token is an operand, create a new binary tree node
             // whose root is the operand and push it into the stack
             else {
-                s.add(new CustomNode(c));
+                CustomNode toBeAddedNode = new CustomNode(c);
+                s.add( toBeAddedNode );
             }
         }
 

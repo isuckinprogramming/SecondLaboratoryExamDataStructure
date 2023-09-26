@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions.">
+    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class.">
+      <change afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" afterDir="false" />
@@ -58,7 +59,20 @@
     "last_opened_file_path": "C:/Users/Borgs/Documents/programmingFiles/SecondLaboratoryExamDataStructure"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ProgramTest">
+    <configuration name="CustomMainRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LimModifiedExpressionTree.CustomMainRunner" />
+      <module name="SecondLaboratoryExamDataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LimModifiedExpressionTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OriginalExpressionTreeFromTechieDelight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OriginalExpressionTreeFromTechieDelight" />
       <module name="SecondLaboratoryExamDataStructure" />
@@ -66,9 +80,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProgramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LimModifiedExpressionTree.ProgramTest" />
+      <module name="SecondLaboratoryExamDataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LimModifiedExpressionTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProgramTest" />
         <item itemvalue="Application.OriginalExpressionTreeFromTechieDelight" />
+        <item itemvalue="Application.CustomMainRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695692404198</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class.">
+      <created>1695692738069</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695692738069</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +168,22 @@
     <MESSAGE value="Initialize java project using Intellij IDEA&#10;&#10;Group 8 problem: expression tree with modifications -&gt; Numeric Input and Modulo addition feature." />
     <MESSAGE value="Retrieved reference implementation for project base&#10;&#10;Retrieved code implementation from techie delight construction of expression tree. &#10;&#10;Link : https://www.techiedelight.com/expression-tree/&#10;&#10;Expression tree Code will be modified as per the requirements of the project." />
     <MESSAGE value="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions." />
+    <MESSAGE value="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java</url>
+          <line>45</line>
+          <properties class="LimModifiedExpressionTree.CustomExpressionTree" method="construct">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
