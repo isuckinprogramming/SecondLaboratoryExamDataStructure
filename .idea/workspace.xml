@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Retrieved reference implementation for project base&#10;&#10;Retrieved code implementation from techie delight construction of expression tree. &#10;&#10;Link : https://www.techiedelight.com/expression-tree/&#10;&#10;Expression tree Code will be modified as per the requirements of the project.">
-      <change afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" afterDir="false" />
+    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695691644144</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions.">
+      <created>1695692404198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695692404198</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize java project using Intellij IDEA&#10;&#10;Group 8 problem: expression tree with modifications -&gt; Numeric Input and Modulo addition feature." />
     <MESSAGE value="Retrieved reference implementation for project base&#10;&#10;Retrieved code implementation from techie delight construction of expression tree. &#10;&#10;Link : https://www.techiedelight.com/expression-tree/&#10;&#10;Expression tree Code will be modified as per the requirements of the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrieved reference implementation for project base&#10;&#10;Retrieved code implementation from techie delight construction of expression tree. &#10;&#10;Link : https://www.techiedelight.com/expression-tree/&#10;&#10;Expression tree Code will be modified as per the requirements of the project." />
+    <MESSAGE value="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions." />
   </component>
 </project>
