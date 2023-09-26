@@ -1,12 +1,26 @@
 package LimModifiedExpressionTree;
 
 import java.util.Stack;
+import java.util.function.Function;
 
 public class CustomExpressionTree {
 
-    // Function to check if a given token is an operator
+    /**
+     *
+     *  Function to check if a given token is an operator
+     *
+     *  NEW IN CUSTOM: added a condition to accept modulo as an operator.
+     * */
+
     public boolean isOperator(char c) {
-        return (c == '+' || c == '-' || c == '*' || c == '/' || c == '^');
+        return (
+            c == '+' ||
+            c == '-' ||
+            c == '*' ||
+            c == '/' ||
+            c == '^' ||
+            c == '%'
+        );
     }
 
     // Print the postfix expression for an expression tree
@@ -27,9 +41,11 @@ public class CustomExpressionTree {
             return;
         }
 
+        // added some space inside the parenthesis so that it would not suffocate
+        // characters inside, for easier readability
         // if the current token is an operator, print open parenthesis
         if (isOperator(root.data)) {
-            System.out.print("(");
+            System.out.print("( ");
         }
 
         inorder(root.left);
@@ -38,7 +54,7 @@ public class CustomExpressionTree {
 
         // if the current token is an operator, print close parenthesis
         if (isOperator(root.data)) {
-            System.out.print(")");
+            System.out.print(" )");
         }
     }
 

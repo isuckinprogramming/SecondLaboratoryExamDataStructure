@@ -3,8 +3,10 @@ package LimModifiedExpressionTree;
 public class ProgramTest {
     public static void main(String[] args) {
 
-        developmentTestScenarioOne();
+//        developmentTestScenarioOne();
+    testingModuloOperationImplementation();
     }
+
 
 
 /**
@@ -34,6 +36,23 @@ public class ProgramTest {
 
         System.out.print("\nInfix Expression: ");
         ExpressionTree.inorder(root);
+    }
+
+
+    public static void testingModuloOperationImplementation() {
+
+        CustomExpressionTree ExpressionTree = new CustomExpressionTree();
+
+        String postfixExperimentEntry = "ab%";
+        CustomNode root = ExpressionTree.construct(postfixExperimentEntry);
+
+        System.out.print("Postfix Expression" +
+                ": ");
+        ExpressionTree.postorder(root);
+
+        System.out.print("\nInfix Expression: ");
+        ExpressionTree.inorder(root);
+
     }
 
 }

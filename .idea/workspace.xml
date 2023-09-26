@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class.">
-      <change afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" afterDir="false" />
+    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695692738069</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario.">
+      <created>1695696620801</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695696620801</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,14 +175,15 @@
     <MESSAGE value="Retrieved reference implementation for project base&#10;&#10;Retrieved code implementation from techie delight construction of expression tree. &#10;&#10;Link : https://www.techiedelight.com/expression-tree/&#10;&#10;Expression tree Code will be modified as per the requirements of the project." />
     <MESSAGE value="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions." />
     <MESSAGE value="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class." />
+    <MESSAGE value="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java</url>
-          <line>45</line>
+          <line>61</line>
           <properties class="LimModifiedExpressionTree.CustomExpressionTree" method="construct">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
