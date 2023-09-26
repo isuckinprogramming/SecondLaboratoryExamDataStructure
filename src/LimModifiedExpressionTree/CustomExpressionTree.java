@@ -19,39 +19,31 @@ public class CustomExpressionTree {
 
         // base case
         if ( isInputInvalid(userInputPostfixNotation) ) {
+            wrongOperatorInput();
             return null;
         }
 
-        String[] contents = userInputPostfixNotation.split(",");
+        String[] contents = userInputPostfixNotation.split(" ");
 
         // create an empty stack to store tree pointers
         Stack<CustomNode> nodeStack = new Stack<>();
 
         for ( String data : contents ){
-
 //            creating a number node
             try {
-                int numericData = Integer.parseInt(data);
-                CustomNode numberNode = new CustomNode( numericData);
-                nodeStack.push(numberNode);
+                createNumberNode( nodeStack ,data);
             }
 //            creating operator node
             catch (NumberFormatException e){
 
-                if(! ( data.length() == 1) ){
-//                    invalid data, no code to handle invalid data yet
-                }
                 char operatorInput = data.toCharArray()[0];
 
-                // pop two nodes `x` and `y` from the stack
-                CustomNode rightNode = nodeStack.pop();
-                CustomNode leftNode = nodeStack.pop();
-
-                // construct a new binary tree whose root is the operator and whose
-                // left and right children point to `y` and `x`, respectively
-
-                CustomNode operatorNode = new CustomNode( operatorInput, leftNode, rightNode );
-                nodeStack.push(operatorNode);
+                if( isOperator( operatorInput )){
+                    createOperatorNode( nodeStack, operatorInput );
+                } else {
+//                    wrong input
+                    wrongOperatorInput();
+                }
             }
         }
 
@@ -59,6 +51,30 @@ public class CustomExpressionTree {
         return nodeStack.peek();
     }
 
+    private static void createNumberNode(Stack<CustomNode> nodeStack, String data ) throws NumberFormatException{
+
+//        this will throw an exception when the string cannot be converted
+//        into a number which means that input is for an operator or invalid
+//            Integer.parseInt(StringParam)
+
+        int numericData = Integer.parseInt(data);
+        CustomNode numberNode = new CustomNode( numericData);
+        nodeStack.push(numberNode);
+    }
+
+    private static void createOperatorNode( Stack<CustomNode> nodeStack, char operatorInput){
+        CustomNode rightNode = nodeStack.pop();
+
+//                left is popped after right
+        CustomNode leftNode = nodeStack.pop();
+
+        CustomNode operatorNode = new CustomNode( operatorInput, leftNode, rightNode );
+        nodeStack.push(operatorNode);
+    }
+
+    private static void wrongOperatorInput() {
+
+    }
     /**
      *
      *  Function to check if a given token is an operator

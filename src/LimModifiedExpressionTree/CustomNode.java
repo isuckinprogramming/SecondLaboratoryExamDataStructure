@@ -4,20 +4,41 @@ public class CustomNode {
 
     int data;
     CustomNode left, right;
-
-//    default
+/**
+ *   I used a string as the operator for holding
+ *   operator of an operator node because, the operator
+ *   node will be added to a string for concatenation.
+ *
+ * */
     String operator = "";
     private boolean isOperatorNode = false;
     public boolean isNodeAnOperator() {
         return  isOperatorNode;
     }
 
+/**
+ * Constructor for number node. Number nodes hold only numbers for the expression tree.<br></br>
+ *
+ * @param data Number inside the node.
+ * */
     CustomNode(int data)
     {
         this.data = data;
         this.left = this.right = null;
     }
 
+/**
+ *Constructor for Operator node. Operator nodes need left and <br></br>
+ * right nodes, which is why during the initialization of the node, <br></br>
+ * the left and right nodes must be identified first. <br></br>
+ * <br></br>
+ * Both Nodes must be number nodes, operator nodes cannot be passed as
+ * left or right nodes.<br></br>
+ * @param left This node will be the left-hand side of the expression when
+ *             used with the operator node.
+ * @param right This node will be the right-hand side of the expression when
+ *              used with the operator node.
+ * */
     CustomNode(char operator, CustomNode left, CustomNode right)
     {
         setAsOperatorNode( operator);
@@ -25,6 +46,9 @@ public class CustomNode {
         this.right = right;
     }
 
+/**
+ * Set the node as an operator node.
+ * */
     public void setAsOperatorNode(char operatorInput) {
 
         if(!CustomExpressionTree.isOperator( operatorInput)){
