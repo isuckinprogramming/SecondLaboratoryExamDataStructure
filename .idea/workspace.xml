@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario.">
+    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Modified the CustomNode to contain numbers and operator&#10;&#10;Major changes to CustomNode.java&#10;&#10;Major changes to CustomExpressionTree.java&#10;&#10;Changes to CustomNode, added constructor for making a node specifically for operators only. &#10;&#10;Added some Retrieval fucntions for the encapsulated data inside the CustomNode.java&#10;&#10;&#10;Major changes to CustomExpressionTree.java, since there are major changes to the CustomNode.java, majority of the original method is broken due to invalid datatype errors. &#10;&#10;Modified to methods and method calls to fix invalid data types.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695696620801</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modified the CustomNode to contain numbers and operator&#10;&#10;Major changes to CustomNode.java&#10;&#10;Major changes to CustomExpressionTree.java&#10;&#10;Changes to CustomNode, added constructor for making a node specifically for operators only. &#10;&#10;Added some Retrieval fucntions for the encapsulated data inside the CustomNode.java&#10;&#10;&#10;Major changes to CustomExpressionTree.java, since there are major changes to the CustomNode.java, majority of the original method is broken due to invalid datatype errors. &#10;&#10;Modified to methods and method calls to fix invalid data types.">
+      <created>1695699824321</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695699824321</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,19 +187,38 @@
     <MESSAGE value="Created Custom class of original implemented code&#10;&#10;All modifications will be implemented inside the classes prefixed with Custom.&#10;&#10;I did not extend the base class because I think this creates unnecessary complications and restrictions." />
     <MESSAGE value="Copied the code from the original to custom&#10;&#10;The copied functions from the original, most of which are static, is converted to non-static inside the custom expression tree class." />
     <MESSAGE value="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario." />
+    <MESSAGE value="Modified the CustomNode to contain numbers and operator&#10;&#10;Major changes to CustomNode.java&#10;&#10;Major changes to CustomExpressionTree.java&#10;&#10;Changes to CustomNode, added constructor for making a node specifically for operators only. &#10;&#10;Added some Retrieval fucntions for the encapsulated data inside the CustomNode.java&#10;&#10;&#10;Major changes to CustomExpressionTree.java, since there are major changes to the CustomNode.java, majority of the original method is broken due to invalid datatype errors. &#10;&#10;Modified to methods and method calls to fix invalid data types." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified the CustomNode to contain numbers and operator&#10;&#10;Major changes to CustomNode.java&#10;&#10;Major changes to CustomExpressionTree.java&#10;&#10;Changes to CustomNode, added constructor for making a node specifically for operators only. &#10;&#10;Added some Retrieval fucntions for the encapsulated data inside the CustomNode.java&#10;&#10;&#10;Major changes to CustomExpressionTree.java, since there are major changes to the CustomNode.java, majority of the original method is broken due to invalid datatype errors. &#10;&#10;Modified to methods and method calls to fix invalid data types." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java</url>
-          <line>74</line>
+          <line>129</line>
           <properties class="LimModifiedExpressionTree.CustomExpressionTree" method="construct">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java</url>
+          <line>77</line>
+          <properties class="LimModifiedExpressionTree.CustomExpressionTree" method="isOperator">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java</url>
+          <line>41</line>
+          <properties class="LimModifiedExpressionTree.CustomNode" method="setAsOperatorNode">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

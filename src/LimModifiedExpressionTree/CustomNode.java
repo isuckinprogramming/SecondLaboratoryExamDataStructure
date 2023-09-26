@@ -27,24 +27,24 @@ public class CustomNode {
 
 
     CustomNode(String operator ){
-        setAsOperatorNode(operator);
+        setAsOperatorNode(operator.charAt(0));
         isOperatorNode = true;
     }
 
 
-    CustomNode(String operator, CustomNode left, CustomNode right)
+    CustomNode(char operator, CustomNode left, CustomNode right)
     {
-        setAsOperatorNode(operator);
+        setAsOperatorNode( operator);
         this.left = left;
         this.right = right;
     }
 
-    public void setAsOperatorNode(String operatorInput) {
+    public void setAsOperatorNode(char operatorInput) {
 
-        if(!CustomExpressionTree.isOperator( operator.charAt(0) )){
+        if(!CustomExpressionTree.isOperator( operatorInput)){
             return;
         }
-        this.operator = operatorInput;
+        this.operator += operatorInput;
         isOperatorNode= true;
     }
 
