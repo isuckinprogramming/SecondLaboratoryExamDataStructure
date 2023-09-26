@@ -18,20 +18,6 @@ public class CustomNode {
         this.left = this.right = null;
     }
 
-    CustomNode(int data, CustomNode left, CustomNode right)
-    {
-        this.data = data;
-        this.left = left;
-        this.right = right;
-    }
-
-
-    CustomNode(String operator ){
-        setAsOperatorNode(operator.charAt(0));
-        isOperatorNode = true;
-    }
-
-
     CustomNode(char operator, CustomNode left, CustomNode right)
     {
         setAsOperatorNode( operator);
@@ -48,12 +34,7 @@ public class CustomNode {
         isOperatorNode= true;
     }
 
-    public char getOperatorChar() {
-        return operator.charAt(0);
-    }
-
-
-    /***
+    /**
  * This method returns a string representation of the object,
  * which shows what is the data inside of the CustomNode.
  *

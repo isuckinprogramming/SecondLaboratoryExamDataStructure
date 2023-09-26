@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Modified the CustomNode to contain numbers and operator&#10;&#10;Major changes to CustomNode.java&#10;&#10;Major changes to CustomExpressionTree.java&#10;&#10;Changes to CustomNode, added constructor for making a node specifically for operators only. &#10;&#10;Added some Retrieval fucntions for the encapsulated data inside the CustomNode.java&#10;&#10;&#10;Major changes to CustomExpressionTree.java, since there are major changes to the CustomNode.java, majority of the original method is broken due to invalid datatype errors. &#10;&#10;Modified to methods and method calls to fix invalid data types.">
+    <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="all done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" afterDir="false" />
@@ -101,6 +101,8 @@
         <item itemvalue="Application.ProgramTest" />
         <item itemvalue="Application.OriginalExpressionTreeFromTechieDelight" />
         <item itemvalue="Application.CustomMainRunner" />
+        <item itemvalue="Application.ProgramTest" />
+        <item itemvalue="Application.OriginalExpressionTreeFromTechieDelight" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +171,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Lim/additionOfModuloOperator" />
+                        <option value="Lim/expressionTreeClean" />
                       </list>
                     </value>
                   </entry>
@@ -195,16 +197,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java</url>
-          <line>129</line>
-          <properties class="LimModifiedExpressionTree.CustomExpressionTree" method="construct">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java</url>
-          <line>77</line>
+          <line>68</line>
           <properties class="LimModifiedExpressionTree.CustomExpressionTree" method="isOperator">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -213,7 +206,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java</url>
-          <line>41</line>
+          <line>27</line>
           <properties class="LimModifiedExpressionTree.CustomNode" method="setAsOperatorNode">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
