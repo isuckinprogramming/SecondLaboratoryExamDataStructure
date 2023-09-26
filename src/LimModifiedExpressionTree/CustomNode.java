@@ -2,16 +2,23 @@ package LimModifiedExpressionTree;
 
 public class CustomNode {
 
-    char data;
+    int data;
     CustomNode left, right;
 
-    CustomNode(char data)
+//    default
+    String operator = "";
+    private boolean isOperatorNode = false;
+    public boolean isNodeAnOperator() {
+        return  isOperatorNode;
+    }
+
+    CustomNode(int data)
     {
         this.data = data;
         this.left = this.right = null;
     }
 
-    CustomNode(char data, CustomNode left, CustomNode right)
+    CustomNode(int data, CustomNode left, CustomNode right)
     {
         this.data = data;
         this.left = left;
@@ -19,7 +26,34 @@ public class CustomNode {
     }
 
 
-/***
+    CustomNode(String operator ){
+        setAsOperatorNode(operator);
+        isOperatorNode = true;
+    }
+
+
+    CustomNode(String operator, CustomNode left, CustomNode right)
+    {
+        setAsOperatorNode(operator);
+        this.left = left;
+        this.right = right;
+    }
+
+    public void setAsOperatorNode(String operatorInput) {
+
+        if(!CustomExpressionTree.isOperator( operator.charAt(0) )){
+            return;
+        }
+        this.operator = operatorInput;
+        isOperatorNode= true;
+    }
+
+    public char getOperatorChar() {
+        return operator.charAt(0);
+    }
+
+
+    /***
  * This method returns a string representation of the object,
  * which shows what is the data inside of the CustomNode.
  *

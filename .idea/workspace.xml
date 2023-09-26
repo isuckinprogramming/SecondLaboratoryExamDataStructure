@@ -7,7 +7,7 @@
     <list default="true" id="5e94b965-faba-4f03-b47f-a07c4bad0b80" name="Changes" comment="Created class to conduct tests to understand expression tree&#10;&#10;Created a class for testing purposes only. &#10;&#10;The class ProgramTest.java is used for testing out the Custom Classes. &#10;&#10;The class will contain methods for every different testing scenario. &#10;&#10;The main method will call the scenario method.&#10;&#10;I don't want to cram all the testing scenario into one method(inside the main method) , which is why I am planning to  dedicate separate methods for every testing scenario.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/ProgramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +29,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -45,19 +45,22 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2Vuf5j8BDrjmMxhwAKuc4R6sIrp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Borgs/Documents/programmingFiles/SecondLaboratoryExamDataStructure"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Borgs/Documents/programmingFiles/SecondLaboratoryExamDataStructure&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.ProgramTest">
     <configuration name="CustomMainRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LimModifiedExpressionTree.CustomMainRunner" />
@@ -158,7 +161,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Lim/numericInputForExpressionTree" />
+                        <option value="Lim/additionOfModuloOperator" />
                       </list>
                     </value>
                   </entry>
@@ -183,7 +186,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/LimModifiedExpressionTree/CustomExpressionTree.java</url>
-          <line>61</line>
+          <line>74</line>
           <properties class="LimModifiedExpressionTree.CustomExpressionTree" method="construct">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

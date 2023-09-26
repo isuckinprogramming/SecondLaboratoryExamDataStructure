@@ -5,6 +5,19 @@ import java.util.function.Function;
 
 public class CustomExpressionTree {
 
+/**
+ *Node data must be separated by comma.
+ * Ex: "1, 2, +"
+ *
+ * method for turning string with numeric input into data that
+ * can be converted into an expression.
+ *
+ *
+ * */
+    public static String[] converterPostfixStringIntoExpression() {
+        return null;
+    }
+
     /**
      *
      *  Function to check if a given token is an operator
@@ -12,7 +25,7 @@ public class CustomExpressionTree {
      *  NEW IN CUSTOM: added a condition to accept modulo as an operator.
      * */
 
-    public boolean isOperator(char c) {
+    public static boolean isOperator(char c) {
         return (
             c == '+' ||
             c == '-' ||
@@ -44,7 +57,7 @@ public class CustomExpressionTree {
         // added some space inside the parenthesis so that it would not suffocate
         // characters inside, for easier readability
         // if the current token is an operator, print open parenthesis
-        if (isOperator(root.data)) {
+        if (root.isNodeAnOperator()) {
             System.out.print("( ");
         }
 
@@ -53,7 +66,7 @@ public class CustomExpressionTree {
         inorder(root.right);
 
         // if the current token is an operator, print close parenthesis
-        if (isOperator(root.data)) {
+        if (root.isNodeAnOperator()) {
             System.out.print(" )");
         }
     }
